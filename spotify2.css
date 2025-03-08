@@ -1,0 +1,228 @@
+.invert {
+  filter: invert(1);
+}
+
+:root {
+  --a: 0;
+}
+
+.inv {
+  filter: invert(.8);
+}
+
+.opicty {
+  fill: currentcolor;
+}
+
+.all_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000092;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #797979;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a999b;
+  cursor: pointer;
+}
+
+.volume-slider {
+  width: 120px;
+  height: 5px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1035px) {
+  .first_coloum {
+    position: absolute;
+    left: -120%;
+    transition: all .6s ease-in-out;
+    z-index: 1;
+    width: 425px;
+    height: 93vh;
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .songs_sec,
+  .songs {
+    height: 78vh;
+  }
+
+  .second_coloum {
+    width: 100%;
+  }
+
+  .next {
+    margin-left: auto;
+  }
+
+
+  .track_player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .next {
+    width: auto;
+  }
+
+  .nav_bar {
+    width: auto;
+  }
+
+  .sc_first {
+    width: auto;
+  }
+
+  .fst_input input {
+    width: auto;
+  }
+
+  .scrool {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  .singer {
+    width: 100%;
+  }
+
+  .texxt p {
+    font-size: 18px;
+  }
+
+  .hameburger img {
+    display: block;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .first,
+  .third {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .install {
+    display: none;
+  }
+}
+
+@media (max-width: 590px) {
+  .fst_input input {
+    display: none;
+  }
+
+  .browse {
+    display: none;
+  }
+
+  .serch_logo {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .seekbar1,
+  .seekbar {
+    width: 300px;
+  }
+
+  .second,
+  .top,
+  .bottom {
+    width: 98%;
+  }
+
+  .first_coloum {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .first_coloum {
+    width: 100%;
+  }
+
+  .seekbar1,
+  .seekbar {
+    width: 100%;
+  }
+
+  .song_sec {
+    padding-left: 0px;
+  }
+
+  .scrool {
+
+    height: 71vh;
+
+    .main_content {
+      height: auto;
+    }
+
+    .song {
+      width: 88%;
+      height: auto;
+      padding: 25px;
+    }
+
+    .song img {
+      width: 100%;
+      height: auto;
+    }
+
+    .txt h3 {
+      font-size: 35px;
+    }
+
+    .song .txt p {
+      font-size: 20px;
+    }
+
+    .play_btn i {
+      top: 260px;
+      right: 10px;
+    }
+
+  }
+}
+
+@media (max-width: 380px) {
+  .home {
+    display: none;
+  }
+
+  .first_coloum {
+    width: 100%;
+  }
+
+  .bell,
+  .login {
+    margin: 0;
+  }
+}
