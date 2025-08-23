@@ -172,7 +172,7 @@ async function main() {
         if (index < songs.length - 1) playMusic(songs[index + 1]);
     });
     // Volume control
-    document.querySelector("#volume_icon").addEventListener("input", (e) => {
+    document.querySelector("#volume").addEventListener("input", (e) => {
         currentSong.volume = e.target.value;
     });
     // Set volume & Mute button
@@ -266,9 +266,6 @@ function handleSearch(event) {
 const debouncedSearch = debounce(handleSearch, 500);
 document.getElementById("search_input").addEventListener("input", debouncedSearch);
 
-
-
-// 
 
 
 // Mobile search toggle
