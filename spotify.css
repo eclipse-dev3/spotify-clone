@@ -26,6 +26,9 @@ nav {
 .spotify {
     width: 72px;
     height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hameburger img {
@@ -177,14 +180,8 @@ nav {
     height: 48px;
 }
 
-.login p {
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 12px;
+.login img {
+    width: 90%;
 }
 
 .main {
