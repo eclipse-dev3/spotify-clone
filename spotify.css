@@ -4,11 +4,15 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
     padding: 8px;
     font-family: Arial, sans-serif;
     /* position: relative; */
+}
+
+nav {
+    position: relative;
 }
 
 .nav_bar {
@@ -79,7 +83,8 @@ body {
     background-color: #1f1f1f;
     border: none;
     outline: none;
-    padding-right: 10px;
+    padding-left: 5px;
+    color: #fff;
 }
 
 .fst_input input::placeholder {
@@ -395,6 +400,7 @@ body {
     padding-left: 28px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .scrool {
@@ -429,7 +435,6 @@ body {
     width: 153.719px;
     height: 86.667px;
     margin-top: 5px;
-    /* border: 1px solid rgb(30, 0, 255); */
 }
 
 .song .txt h3 {
@@ -472,28 +477,24 @@ body {
     height: 14vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     bottom: 0px;
     left: -1px;
     overflow: hidden;
-    /* border: 1px solid #1ed760; */
     background-color: rgb(0, 0, 0);
 }
 
 .first {
-    width: 330.198px;
+    width: 25%;
     height: 51.333px;
     padding: 10px 20px;
-    /* border: 1px solid #d71ebb; */
 }
 
 .song_tittle {
-    /* border: 1px solid #3ad71e; */
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    overflow-wrap: anywhere;
+    width: 85%;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .song_tittle p {
@@ -502,64 +503,33 @@ body {
 }
 
 .second {
-    width: 499px;
+    width: 50%;
     height: 61.333px;
-    /* border: 1px solid #ffffff; */
 }
 
 .third {
-    width: 374px;
+    width: 25%;
     height: 61.333px;
-    /* border: 1px solid #ff0000; */
+    gap: 5px;
 }
 
 .top {
     margin: 7px 0 4px 0;
-    width: 498px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    /* border: 1px solid #ffea00; */
 }
 
 .bottom {
-    width: 498px;
-    height: 17.667px;
-    /* border: 1px solid #1500ff; */
+    gap: 10px;
 }
 
-.seekbar1 {
-    position: relative;
-    /* border: 1px solid #ffffff; */
-}
-
-.seekbar {
-    position: relative;
-    width: 402px;
-    border: 1.99px solid rgba(158, 154, 154, 0.792);
-    border-radius: 5px;
-    margin: 13px auto;
+#music_seekbar {
+    width: 84%;
     cursor: pointer;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #14d2b2;
-    position: absolute;
-    bottom: 9.5px;
-    left: 0px;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
-
-.time1,
-.time2 {
-    font-size: 12px;
-    padding: 0 8px;
+    height: 5px;
 }
 
 .top img {
@@ -574,7 +544,12 @@ body {
     background-color: #fff;
 }
 
-.volume {
-    gap: 5px;
+#volume_icon {
     cursor: pointer;
+}
+
+.volume-slider {
+    cursor: pointer;
+    height: 5px;
+    width: 45%;
 }

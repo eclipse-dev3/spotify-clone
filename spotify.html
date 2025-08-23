@@ -13,28 +13,29 @@
 </head>
 
 <body>
+
     <nav>
         <div class="nav_bar">
             <div class="nav_first all_flex">
                 <div class="hameburger">
-                    <img src="hameburger.svg" alt="" class="invert">
+                    <img src="svg/hameburger.svg" alt="" class="invert">
                 </div>
                 <div class="spotify all_flex">
-                    <img src="spotify (1).svg" class="">
+                    <img src="svg/spotify (1).svg" class="">
                 </div>
                 <div class="home">
-                    <img src="home.svg" alt="" class="invert">
+                    <img src="svg/home.svg" alt="" class="invert">
                 </div>
                 <div class="serch_container">
                     <div class="serch_logo">
-                        <img src="serch.svg" alt="" class="invert">
+                        <img src="svg/serch.svg" alt="" class="invert">
                     </div>
                     <div class="fst_input">
-                        <input type="text" name="" id="input" placeholder="What do you want to play?">
+                        <input type="text" name="" id="search_input" placeholder="What do you want to play?">
                     </div>
                     <div class="browse">
                         <div class="brows_icon">
-                            <img src="browse.svg" alt="">
+                            <img src="svg/browse.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -44,17 +45,27 @@
                     <button>Explore Premimum</button>
                 </div>
                 <div class="install all_flex">
-                    <img src="download.svg" alt="">
+                    <img src="svg/download.svg" alt="">
                     <div class="text">Install App</div>
                 </div>
                 <div class="bell all_flex">
-                    <img src="bell.svg" alt="">
+                    <img src="svg/bell.svg" alt="">
                 </div>
                 <div class="login all_flex">
                     <p>log in</p>
                 </div>
             </div>
         </div>
+
+        <!-- search outcome -->
+
+        <div class="search_output">
+            <ul id="search_output_ul">
+            </ul>
+        </div>
+
+
+
     </nav>
 
     <div class="main">
@@ -63,16 +74,16 @@
                 <div class="content">
                     <div class="library">
                         <div class="lib_img">
-                            <img src="library.svg" alt="" class="invert">
+                            <img src="svg/library.svg" alt="" class="invert">
                         </div>
                         <p>Your Library</p>
                     </div>
                     <div class="icon">
                         <div class="plus width all_flex">
-                            <img src="plus.svg" alt="" class="invert img_wdth">
+                            <img src="svg/plus.svg" alt="" class="invert img_wdth">
                         </div>
                         <div class="right width all_flex">
-                            <img src="arrow.svg" alt="" class="invert img_wdth">
+                            <img src="svg/arrow.svg" alt="" class="invert img_wdth">
                         </div>
                     </div>
                 </div>
@@ -115,433 +126,8 @@
                         </div>
                     </div>
                     <div class="song_sec">
-                         <!-- <div data-folder="YoYo" class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div> 
-                         <!-- <img src="songs/Ragni/cover.jpg.jpg" alt="">  
-                       <div data-folder="Ragni" class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div> 
 
-                         <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
 
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="frst_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67706f000000027d7188716df3a173fcbd8a00.jpg" alt="">
-
-                            <div class="txt">
-                                <h3>Payal</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Paradox</p>
-                            </div>
-                        </div>
-                        <div class="secnd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab6761610000f178bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
-                            <div class="txt">
-                                <h3>Millionaire</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="thrd_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0292ce6455ea43fe9af245d51c.jpg" alt="">
-                            <div class="txt">
-                                <h3>Dope Shope</h3>
-                                <p>Yo Yo Honey Singh,</p>
-                                <p>Deep Money</p>
-                            </div>
-                        </div>
-                        <div class="frth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0246a4f62d210c2cb02158eac7.jpg" alt="">
-                            <div class="txt">
-                                <h3>Blue Eyes</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div>
-                        <div class="ffth_song song">
-                            <div class="play_btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <img src="assets/ab67616d00001e0265ce8c712e4fb894bc88461b.jpg" alt="">
-                            <div class="txt">
-                                <h3>Desi Kalakaar</h3>
-                                <p>Yo Yo Honey Singh</p>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -556,29 +142,25 @@
         </div>
         <div class="second">
             <div class="top">
-                <img id="previous" src="left_play.svg" alt="" class="invert inv">
-                <img id="play" src="play1.svg" alt="">
-                <img id="next" src="right_play.svg" alt="" class="invert inv">
+                <img id="previous" src="svg/left_play.svg" alt="" class="invert inv">
+                <img id="play" src="svg/play1.svg" alt="">
+                <img id="next" src="svg/right_play.svg" alt="" class="invert inv">
             </div>
             <div class="bottom all_flex">
-                <div class="time1"></div>
-                <div class="seekbar1">
-                    <div class="seekbar"></div>
-                    <div class="circle"></div>
-                </div>
-                <div class="time2"></div>
+                <p id="start_timing">00:00</p>
+                <input type="range" id="music_seekbar" value="0">
+                <p id="timing">00:00</p>
             </div>
         </div>
         <div class="third all_flex">
-            <div class="volume all_flex">
-                <img src="volumeHalf.svg" alt="" class="invert">
-                <input type="range" id="volume" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
-            </div>
+            <img src="svg/volumeFull.svg" alt="" class="invert" id="volume_icon">
+            <input type="range" id="volume" class="volume-slider" min="0" max="1" step="0.001" value="1">
         </div>
     </div>
     </div>
 
     <script src="spotify.js"></script>
+
 </body>
 
 </html>

@@ -38,11 +38,61 @@
   cursor: pointer;
 }
 
-.volume-slider {
-  width: 120px;
-  height: 5px;
+
+/* search outcome____________________________________________________________  */
+
+.search_output {
+  background-color: rgba(0, 0, 0, 0.795);
+  backdrop-filter: blur(20px);
+  width: 44%;
+  padding: 10px 20px;
+  position: absolute;
+  top: 53px;
+  left: 120px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 50vh;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.search_output.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search_output ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search_output ul li {
+  border: 1.5px solid rgb(103, 103, 103);
+  padding: 3px 5px;
+  font-weight: 550;
+  font-size: 11px;
+  height: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   cursor: pointer;
 }
+
+.no_result {
+  color: red;
+}
+
+
+
+/* All media queries for responsivenes________________________________________  */
+
 
 
 @media (max-width: 1035px) {
@@ -51,7 +101,7 @@
     left: -120%;
     transition: all .6s ease-in-out;
     z-index: 1;
-    width: 425px;
+    width: 500px;
     height: 93vh;
   }
 
@@ -61,7 +111,7 @@
 
   .songs_sec,
   .songs {
-    height: 78vh;
+    height: 82vh;
   }
 
   .second_coloum {
@@ -72,6 +122,10 @@
     margin-left: auto;
   }
 
+  .seekbar1,
+  .seekbar {
+    width: 100%;
+  }
 
   .track_player {
     display: flex;
@@ -113,14 +167,44 @@
   .hameburger img {
     display: block;
   }
-
 }
 
 @media (max-width: 900px) {
 
-  .first,
+  .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 0px;
+  }
+
+  .second {
+    width: 80%;
+  }
+
   .third {
-    display: none;
+    width: 50%;
+  }
+
+  .seekbar1,
+  .seekbar {
+    width: 400px;
+  }
+
+  .song_tittle {
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+
+  .track_player {
+    flex-direction: column;
   }
 }
 
@@ -143,20 +227,10 @@
   .serch_logo {
     border-radius: 30px;
   }
+
 }
 
 @media (max-width: 500px) {
-
-  .seekbar1,
-  .seekbar {
-    width: 300px;
-  }
-
-  .second,
-  .top,
-  .bottom {
-    width: 98%;
-  }
 
   .first_coloum {
     width: 100%;
@@ -165,11 +239,6 @@
 
 @media (max-width: 450px) {
   .first_coloum {
-    width: 100%;
-  }
-
-  .seekbar1,
-  .seekbar {
     width: 100%;
   }
 
@@ -224,5 +293,17 @@
   .bell,
   .login {
     margin: 0;
+  }
+
+  .login {
+    width: 52px;
+  }
+
+  .spotify {
+    width: 46px;
+  }
+
+  .next {
+    margin-left: 0px;
   }
 }
