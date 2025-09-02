@@ -192,7 +192,23 @@ async function main() {
             volumeValue.value = 1
         }
     })
+
+    // Image Open.....................
+
+    let profileImage = document.querySelector('.login img')
+    let imageSec = document.querySelector('#image_open_sec')
+    let crose = document.querySelector('#crose')
+
+    profileImage.addEventListener('click', () => {
+        imageSec.classList.add('show')
+    })
+    crose.addEventListener('click', () => {
+        imageSec.classList.remove('show')
+    })
+
+
 }
+
 
 main()
 
@@ -294,3 +310,16 @@ searchInput.addEventListener("input", () => {
         bell.style.display = 'block'
     }
 });
+
+
+
+// click me tost...............
+
+window.addEventListener("load", () => {
+    const clickMe = document.getElementById("click_me");
+    clickMe.classList.add("show");
+    setTimeout(() => {
+        clickMe.classList.remove("show");
+    }, 4000);
+});
+

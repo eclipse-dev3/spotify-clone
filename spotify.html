@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/svg+xml" href="assets/Profile.png" />
     <link rel="stylesheet" href="spotify.css">
     <link rel="stylesheet" href="spotify2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,6 +14,22 @@
 </head>
 
 <body>
+
+
+
+    <div id="image_open_sec">
+        <div id="crose">×</div>
+        <div class="profile_image all_flex">
+            <img src="assets/Profile.png" alt="">
+        </div>
+        <h2>Hi, I am Gaurav Kumar</h2>
+        <p>I’m a frontend developer passionate about creating clean, responsive, and user-friendly web applications. I
+            work with HTML, CSS, JavaScript, React, and Tailwind CSS, and I’m always eager to keep learning, take on new
+            challenges, and grow as a developer.</p>
+        <a href="https://gaurav-kumar-03.vercel.app/" target="_blank">
+            <button>Portfolio</button>
+        </a>
+    </div>
 
     <nav>
         <div class="nav_bar">
@@ -51,8 +68,12 @@
                 <div class="bell all_flex">
                     <img src="svg/bell.svg" alt="">
                 </div>
-                <div class="login all_flex">
-                    <img src="assets/itseclipsedev.jpg" alt="">
+                <div class="login all_flex" id="profile_img">
+                    <img src="assets/Profile.png" alt="">
+                    <div id="click_me">
+                        <p id="arrow">↑</p>
+                        <em>Click me!</em>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,6 +148,7 @@
                     </div>
                     <div class="song_sec">
 
+                        <!-- Dynamic data...  -->
 
                     </div>
                 </div>
@@ -159,8 +181,9 @@
     </div>
     </div>
 
-    <script src="spotify.js"></script>
 
 </body>
+
+<script src="spotify.js"></script>
 
 </html>

@@ -181,7 +181,8 @@ nav {
 }
 
 .login img {
-    width: 90%;
+    width: 60%;
+    cursor: pointer;
 }
 
 .main {
@@ -549,4 +550,110 @@ nav {
     cursor: pointer;
     height: 5px;
     width: 45%;
+}
+
+
+/* image open sec */
+
+
+#image_open_sec {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    position: absolute;
+    gap: 5px;
+    width: 25%;
+    top: 70px;
+    right: 30px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    background: rgba(37, 24, 74, 0.306);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+
+
+#image_open_sec.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile_image img {
+    width: 70%;
+    cursor: pointer;
+    border: 3px solid blue;
+    border-radius: 50%;
+    /* box-shadow: 0 2px 5px rgba(215 115 255, .6); */
+}
+
+#image_open_sec p {
+    font-size: 12px;
+}
+
+#image_open_sec h2 {
+    color: #8353d6;
+}
+
+#image_open_sec button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, rgb(130, 69, 236), rgb(168, 85, 247));
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 550;
+    margin-top: 10px;
+    box-shadow: 0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec
+}
+
+#image_open_sec button:hover {
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+
+    transform: scale(1.05);
+}
+
+#crose {
+    position: absolute;
+    font-size: 35px;
+    cursor: pointer;
+    top: 5px;
+    right: 18px;
+    color: #ffffffc8;
+}
+
+#click_me {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#click_me.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#click_me em {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(235, 235, 235);
+}
+
+#arrow {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(205, 205, 205);
 }

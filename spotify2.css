@@ -105,6 +105,10 @@
     height: 93vh;
   }
 
+  #image_open_sec {
+    width: 40%;
+  }
+
   .btn1 {
     display: none;
   }
@@ -243,18 +247,6 @@
     width: 120%;
   }
 
-
-  /* .serch_container.active~.browse,
-  .serch_container.active~.home,
-  .serch_container.active~.bell,
-  .serch_container.active~.login {
-    display: none;
-  } */
-
-  /* .serch_container.active~.nav_icons {
-    display: none;
-  } */
-
 }
 
 @media (max-width: 500px) {
@@ -272,12 +264,39 @@
 }
 
 @media (max-width: 450px) {
+  #image_open_sec {
+    top: 65px;
+    right: 20px;
+    border-radius: 10px;
+  }
+
   .first_coloum {
     width: 100%;
   }
 
+  #image_open_sec {
+    width: 60%;
+  }
+
+  .texxt h1 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .texxt p {
+    font-size: 14px;
+  }
+
+  .sc_first {
+    width: auto;
+    height: 55px;
+    padding: 8px 20px 0 20px;
+  }
+
   .song_sec {
     padding-left: 0px;
+
   }
 
   .scrool {
@@ -291,7 +310,7 @@
     .song {
       width: 88%;
       height: auto;
-      padding: 25px;
+      padding: 20px 10px 0 10px;
     }
 
     .song img {
@@ -300,11 +319,11 @@
     }
 
     .txt h3 {
-      font-size: 35px;
+      font-size: 30px;
     }
 
     .song .txt p {
-      font-size: 20px;
+      font-size: 17px;
     }
 
     .play_btn i {
