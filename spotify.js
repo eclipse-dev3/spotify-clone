@@ -96,7 +96,7 @@ async function displayAlbums() {
              <div class="play_btn">
                                 <i class="fa-solid fa-play"></i>
                             </div>
-                            <img src="songs/${folder}/cover.jpg.jpg" alt="">
+                            <img src="songs/${folder}/cover.jpg" alt="">
                             <div class="txt">
                                 <h3>${responce.tittle}</h3>
                                 <p>${responce.description}</p>
