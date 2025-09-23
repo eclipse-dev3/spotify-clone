@@ -1,2 +1,0 @@
-# sppotify
-spotify clone
