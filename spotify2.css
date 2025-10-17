@@ -220,9 +220,14 @@
 }
 
 @media (max-width: 590px) {
-  .fst_input input {
+  .serch_logo {
     display: none;
   }
+
+  .bell {
+    display: none;
+  }
+
 
   #search_input {
     border-radius: 25px;
@@ -236,11 +241,6 @@
     border-radius: 30px;
   }
 
-  /*  */
-
-  .fst_input input {
-    display: none;
-  }
 
   .serch_container.active .fst_input input {
     display: block;
@@ -295,6 +295,24 @@
     padding-left: 0px;
   }
 
+  #search_input {
+    border-radius: 50px;
+    padding-left: 10px;
+  }
+
+  .buttons {
+    padding-top: 0;
+  }
+
+  .sc_first {
+    width: auto;
+    height: 45px;
+  }
+
+  .song_sec {
+    padding-bottom: 50px;
+  }
+
   .scrool {
 
     height: 71vh;
@@ -318,18 +336,38 @@
 
     .secnd_song i {
       width: 50px;
-      top: 140px;
+      top: 116px;
       right: 20px;
     }
 
   }
 }
 
+
 @media (max-width: 380px) {
   .search_output {
     top: 53px;
     left: 91px;
     width: 55%;
+  }
+
+  .secnd_song i {
+    width: 50px;
+    top: 80px;
+    right: 20px;
+  }
+
+  .serch_container {
+    padding: 0 0 0 20px;
+    width: 100%;
+  }
+
+  .serch_logo {
+    display: none;
+  }
+
+  .spotify {
+    display: none;
   }
 
   .scrool .song {
@@ -340,8 +378,6 @@
     width: 100%;
   }
 
-
-  .bell,
   .login {
     margin: 0;
   }

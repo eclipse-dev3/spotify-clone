@@ -430,6 +430,7 @@ async function displayAlbums() {
 }
 
 // ------------------ Search Functionality ------------------
+
 function debounce(func, delay) {
     let timer;
     return function (...args) {
@@ -554,33 +555,6 @@ async function main() {
     const profileImage = document.querySelector('.login img');
     const imageSec = document.getElementById('image_open_sec');
     const crose = document.getElementById('crose');
-
-    // Mobile search toggle
-    const searchIcon = document.getElementById("search_icon");
-    const searchInput = document.getElementById("search_input");
-    const searchContainer = document.querySelector(".serch_container");
-    const serchLogo = document.querySelector(".serch_logo");
-    const bell = document.querySelector(".bell");
-
-    searchIcon.addEventListener("click", () => {
-        searchContainer.classList.toggle("active");
-        if (searchContainer.classList.contains("active")) {
-            searchInput.focus();
-            serchLogo.style.display = 'none'
-            bell.style.display = 'none'
-        } else {
-            searchInput.value = "";
-        }
-    });
-
-    // When input is cleared, reset to normal
-    searchInput.addEventListener("input", () => {
-        if (searchInput.value.trim() === "") {
-            searchContainer.classList.remove("active");
-            serchLogo.style.display = 'block'
-            bell.style.display = 'block'
-        }
-    });
 
     profileImage?.addEventListener('click', () => imageSec.classList.add('show'));
     crose?.addEventListener('click', () => imageSec.classList.remove('show'));
