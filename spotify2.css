@@ -310,7 +310,7 @@
   }
 
   .song_sec {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 
   .scrool {
@@ -331,8 +331,6 @@
       width: 100%;
       height: auto;
     }
-
-
 
     .secnd_song i {
       width: 50px;
