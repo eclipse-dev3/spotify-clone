@@ -447,15 +447,14 @@ nav {
     font-size: 12px;
     filter: invert(.3);
 }
-
-.play_btn {
+.secnd_song{
     position: relative;
 }
 
-.play_btn i {
+.secnd_song i {
     position: absolute;
-    top: 96px;
-    right: 7px;
+    top: 105px;
+    right: 20px;
     background-color: #1ed760;
     color: #000000;
     border-radius: 50%;

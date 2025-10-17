@@ -265,6 +265,7 @@
 
 @media (max-width: 450px) {
   #image_open_sec {
+    width: 60%;
     top: 65px;
     right: 20px;
     border-radius: 10px;
@@ -272,10 +273,6 @@
 
   .first_coloum {
     width: 100%;
-  }
-
-  #image_open_sec {
-    width: 60%;
   }
 
   .texxt h1 {
@@ -296,7 +293,6 @@
 
   .song_sec {
     padding-left: 0px;
-
   }
 
   .scrool {
@@ -308,7 +304,7 @@
     }
 
     .song {
-      width: 88%;
+      width: 43%;
       height: auto;
       padding: 20px 10px 0 10px;
     }
@@ -318,17 +314,12 @@
       height: auto;
     }
 
-    .txt h3 {
-      font-size: 30px;
-    }
 
-    .song .txt p {
-      font-size: 17px;
-    }
 
-    .play_btn i {
-      top: 260px;
-      right: 10px;
+    .secnd_song i {
+      width: 50px;
+      top: 140px;
+      right: 20px;
     }
 
   }
@@ -339,6 +330,10 @@
     top: 53px;
     left: 91px;
     width: 55%;
+  }
+
+  .scrool .song {
+    width: 40%;
   }
 
   .first_coloum {

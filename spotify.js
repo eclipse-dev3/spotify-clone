@@ -375,7 +375,7 @@ async function getSongs(folder) {
                     <img src="svg/music.svg" alt="" class="invert">
                 </div>
                 <div class="music_text">
-                    <p class="trackk">${decodeURIComponent(song)}</p>
+                    <p class="trackk">${song.replaceAll(/%20/g, ' ')}</p>
                 </div>
                 <img src="svg/pllay.svg" alt="" class="invert">
             </li>
@@ -410,7 +410,7 @@ async function displayAlbums() {
         const data = allSongsData[artist];
         songSec.innerHTML += `
             <div data-folder="songs/${artist}" class="secnd_song song">
-                <div class="play_btn"><i class="fa-solid fa-play"></i></div>
+                <i class="fa-solid fa-play"></i>
                 <img src="${data.cover}" alt="${artist}">
                 <div class="txt">
                     <h3>${artist}</h3>
@@ -492,11 +492,17 @@ async function main() {
         if (songs.length > 0) playMusic(songs[0], true);
     }
 
-    const playBtn = document.getElementById("play");
-    playBtn?.addEventListener("click", () => {
-        if (currentSong.paused) currentSong.play();
-        else currentSong.pause();
-    });
+    play.addEventListener("click", () => {
+        if (currentSong.paused) {
+            currentSong.play()
+            play.src = "svg/play.svg"
+        }
+        else {
+            currentSong.pause()
+            play.src = "svg/play1.svg"
+        }
+    })
+
 
     currentSong.addEventListener("timeupdate", () => {
         document.getElementById("start_timing").textContent = formatTime(currentSong.currentTime);
@@ -549,8 +555,44 @@ async function main() {
     const imageSec = document.getElementById('image_open_sec');
     const crose = document.getElementById('crose');
 
+    // Mobile search toggle
+    const searchIcon = document.getElementById("search_icon");
+    const searchInput = document.getElementById("search_input");
+    const searchContainer = document.querySelector(".serch_container");
+    const serchLogo = document.querySelector(".serch_logo");
+    const bell = document.querySelector(".bell");
+
+    searchIcon.addEventListener("click", () => {
+        searchContainer.classList.toggle("active");
+        if (searchContainer.classList.contains("active")) {
+            searchInput.focus();
+            serchLogo.style.display = 'none'
+            bell.style.display = 'none'
+        } else {
+            searchInput.value = "";
+        }
+    });
+
+    // When input is cleared, reset to normal
+    searchInput.addEventListener("input", () => {
+        if (searchInput.value.trim() === "") {
+            searchContainer.classList.remove("active");
+            serchLogo.style.display = 'block'
+            bell.style.display = 'block'
+        }
+    });
+
     profileImage?.addEventListener('click', () => imageSec.classList.add('show'));
     crose?.addEventListener('click', () => imageSec.classList.remove('show'));
 }
 
 main();
+
+
+window.addEventListener("load", () => {
+    const clickMe = document.getElementById("click_me");
+    clickMe.classList.add("show");
+    setTimeout(() => {
+        clickMe.classList.remove("show");
+    }, 4000);
+});
