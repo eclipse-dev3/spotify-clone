@@ -424,7 +424,7 @@ async function displayAlbums() {
         el.addEventListener("click", async e => {
             const folder = e.currentTarget.dataset.folder;
             songs = await getSongs(folder);
-            if (songs.length > 0) playMusic(songs[0]);
+            // if (songs.length > 0) playMusic(songs[0]);
         });
     });
 }

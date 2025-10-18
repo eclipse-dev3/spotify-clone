@@ -182,14 +182,17 @@
             "Bam_Lehri(256k).mp3"
         ]
     },
-    "Badshah": {
-        "cover": "songs/Badshah/cover.jpg",
+    "My_favourite": {
+        "cover": "songs/My_favourite/cover.jpg",
         "songs": [
-            "Aastha_Gill_-_Buzz_feat_Badshah___Priyank_Sharma___Official_Music_Video(256k).mp3",
-            "Badshah_-_Sab_Sahi_Hai_Bro__Inspired_by__Aladdin__(256k).mp3",
-            "Tareefan___Veere_Di_Wedding___QARAN__Ft._Badshah___Kareena_Kapoor_Khan%2C_Sonam_Kapoor%2C_Swara___Shikha(256k).mp3",
-            "Proper_Patola_-_Official_Video___Diljit_Dosanjh___Badshah(256k).mp3",
-            "OSCAR_-_Video_Song___Kaptaan___Gippy_Grewal_feat._Badshah___Jaani%2C_B_Praak(256k).mp3"
+            "Daddy Mummy FULL VIDEO Song  Urvashi Rautela  Kunal Khemu  DSP  Bhaag Johnny  T-Series.mp3",
+            "Naagan Kaali - MC SQUARE  Renuka Panwar  Nikhil - Swapnil (Official Music Video).mp3",
+            "Guzarish  Full Song  Ghajini  Javed Ali, Sonu Nigam.mp3",
+            "Lo Safar Song With Lyrics  Baaghi 2  Tiger Shroff  Disha Patani  Jubin Nautiyal.mp3",
+            "Main Yahaan Hoon  Full Song  Veer-Zaara  Shah Rukh Khan, Preity Zinta  Madan Mohan, Udit Narayan.mp3",
+            "ANIMAL_ SATRANGA(Song) Ranbir Kapoor,RashmikaSandeep VArijit,Shreyas P,Siddharth-Garima Bhushan K.mp3",
+            "Atif A_ Dekhte Dekhte Lyrical  Batti Gul Meter Chalu  Shahid K Shraddha  Nusrat Saab Rochak Manoj.mp3",
+            "ANIMAL_Pehle Bhi Main(Full Video)  Ranbir Kapoor,Tripti Dimri Sandeep V Vishal M,Raj S Bhushan K.mp3"
         ]
     },
     "YoYo": {
@@ -215,6 +218,16 @@
             "Yo_Yo_Honey_Singh__Aankhon_Aankhon_FULL_VIDEO_Song___Kunal_Khemu%2C_Deana_Uppal___Bhaag_Johnny(256k).mp3 ",
             "Blue_Eyes_Full_Video_Song_Yo_Yo_Honey_Singh___Blockbuster_Song_Of_2013(256k).mp3",
             "Brown_Rang_-_Yo_Yo_Honey_Singh_India's_No.1_Video_2012(256k).mp3"
+        ]
+    },
+    "Badshah": {
+        "cover": "songs/Badshah/cover.jpg",
+        "songs": [
+            "Aastha_Gill_-_Buzz_feat_Badshah___Priyank_Sharma___Official_Music_Video(256k).mp3",
+            "Badshah_-_Sab_Sahi_Hai_Bro__Inspired_by__Aladdin__(256k).mp3",
+            "Tareefan___Veere_Di_Wedding___QARAN__Ft._Badshah___Kareena_Kapoor_Khan%2C_Sonam_Kapoor%2C_Swara___Shikha(256k).mp3",
+            "Proper_Patola_-_Official_Video___Diljit_Dosanjh___Badshah(256k).mp3",
+            "OSCAR_-_Video_Song___Kaptaan___Gippy_Grewal_feat._Badshah___Jaani%2C_B_Praak(256k).mp3"
         ]
     },
     "Haryanvi": {

@@ -656,3 +656,7 @@ nav {
     font-weight: 900;
     color: rgb(205, 205, 205);
 }
+.trackk{
+    display: flex;
+     white-space: nowrap;   
+}
