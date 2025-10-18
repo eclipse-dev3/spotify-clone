@@ -31,6 +31,10 @@ nav {
     align-items: center;
 }
 
+.hameburger {
+    position: relative;
+}
+
 .hameburger img {
     width: 35px;
     display: none;
@@ -175,6 +179,7 @@ nav {
 }
 
 .login {
+    position: relative;
     margin-left: 7px;
     width: 70px;
     height: 48px;
@@ -629,7 +634,7 @@ nav {
     color: #ffffffc8;
 }
 
-#click_me {
+.click_me {
     position: absolute;
     top: 40px;
     right: 10px;
@@ -641,12 +646,12 @@ nav {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-#click_me.show {
+.click_me.show {
     opacity: 1;
     visibility: visible;
 }
 
-#click_me em {
+.click_me em {
     font-size: 12px;
     font-weight: 300;
     color: rgb(235, 235, 235);
@@ -661,4 +666,9 @@ nav {
 .trackk {
     display: flex;
     white-space: nowrap;
+}
+.red_text{
+    color: red;
+    right: 0;
+    top: 25px;
 }

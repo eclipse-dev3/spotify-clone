@@ -563,10 +563,14 @@ async function main() {
 main();
 
 
+// ------------------ Click Me Toast ------------------
 window.addEventListener("load", () => {
-    const clickMe = document.getElementById("click_me");
-    clickMe.classList.add("show");
-    setTimeout(() => {
-        clickMe.classList.remove("show");
-    }, 4000);
+    const clickMeElements = document.querySelectorAll(".click_me");
+
+    clickMeElements.forEach((clickMe) => {
+        clickMe.classList.add("show");
+        setTimeout(() => {
+            clickMe.classList.remove("show");
+        }, 4000);
+    });
 });
