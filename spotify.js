@@ -479,7 +479,7 @@ function handleSearch(event) {
     });
 }
 
-const debouncedSearch = debounce(handleSearch, 500);
+const debouncedSearch = debounce(handleSearch, 200);
 document.getElementById("search_input").addEventListener("input", debouncedSearch);
 
 // ------------------ Main Function ------------------
