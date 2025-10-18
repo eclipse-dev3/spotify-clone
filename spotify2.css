@@ -326,8 +326,8 @@
 
   .sc_first {
     width: auto;
-    height: 55px;
-    padding: 8px 20px 0 20px;
+    height: 35px;
+    padding: 8px 20px 0 30px;
   }
 
   .song_sec {
@@ -341,11 +341,6 @@
 
   .buttons {
     padding-top: 0;
-  }
-
-  .sc_first {
-    width: auto;
-    height: 45px;
   }
 
   .song_sec {
