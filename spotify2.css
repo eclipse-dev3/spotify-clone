@@ -279,6 +279,32 @@
     border-radius: 10px;
   }
 
+  .spotify,
+  .main_content {
+    display: none;
+  }
+
+  .nav_bar {
+    width: 100%;
+  }
+
+  .nav_first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .hameburger {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+  }
+
+  .next {
+    margin: 0;
+  }
+
   .first_coloum {
     width: 100%;
   }
@@ -361,11 +387,6 @@
     width: 50px;
     top: 80px;
     right: 20px;
-  }
-
-  .serch_container {
-    padding: 0 0 0 20px;
-    width: 100%;
   }
 
   .serch_logo {
