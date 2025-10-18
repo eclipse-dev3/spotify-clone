@@ -96,6 +96,11 @@
 
 
 @media (max-width: 1035px) {
+  .red_text {
+    right: 0;
+    top: 25px;
+  }
+
   .first_coloum {
     position: absolute;
     left: -120%;

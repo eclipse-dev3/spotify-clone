@@ -667,8 +667,8 @@ nav {
     display: flex;
     white-space: nowrap;
 }
-.red_text{
-    color: red;
-    right: 0;
+
+.red_text {
+    right: 100px;
     top: 25px;
 }
