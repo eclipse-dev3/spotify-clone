@@ -447,7 +447,8 @@ nav {
     font-size: 12px;
     filter: invert(.3);
 }
-.secnd_song{
+
+.secnd_song {
     position: relative;
 }
 
@@ -656,7 +657,8 @@ nav {
     font-weight: 900;
     color: rgb(205, 205, 205);
 }
-.trackk{
+
+.trackk {
     display: flex;
-     white-space: nowrap;   
+    white-space: nowrap;
 }
