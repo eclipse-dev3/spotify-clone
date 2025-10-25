@@ -48,7 +48,7 @@
   padding: 10px 20px;
   position: absolute;
   top: 53px;
-  left: 120px;
+  left: 80px;
   border-radius: 5px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -272,7 +272,7 @@
   }
 
   .search_output {
-    width: 54%;
+    width: 65%;
   }
 }
 
@@ -379,8 +379,8 @@
 @media (max-width: 380px) {
   .search_output {
     top: 53px;
-    left: 91px;
-    width: 55%;
+    left: 60px;
+    width: 65%;
   }
 
   .secnd_song i {
