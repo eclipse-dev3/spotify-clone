@@ -128,7 +128,7 @@ A sophisticated, Spotify-inspired web music player crafted with pure JavaScript.
 
 **Gaurav Kumar**
 - Portfolio: [https://gaurav-kumar-03.vercel.app/](https://gaurav-kumar-03.vercel.app/)
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
+- GitHub: [Your GitHub Profile](https://github.com/eclipse-dev3)
 
 ## 📄 License
 
