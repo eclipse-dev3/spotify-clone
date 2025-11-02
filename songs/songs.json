@@ -1,6 +1,6 @@
 {
-    "All": {
-        "cover": "songs/All/cover.jpg",
+    "All_songs": {
+        "cover": "songs/Covers/All.jpg",
         "songs": [
             "Bhallwaan_-_Gym_De_Shokeen__Official_Music_Video__Latest_Punjabi_Rap_Song_2021(48k).mp3",
             "Blue_Eyes_Full_Video_Song_Yo_Yo_Honey_Singh___Blockbuster_Song_Of_2013(256k).mp3",
@@ -77,7 +77,6 @@
             "Masoom_Sharma___Nikkar_Nikkar___Sheenam_katholic__Sonika_Singh___New_Haryanvi_Songs_Haryanavi_2019(256k).mp3",
             "Matak_Chalungi_-_Sapna_Choudhary,_Aman_Jaji,_Raj_Mawar,_Manisha_Sharma,_Mukesh_Jaji,_Gulshan_M,_Ajay(256k).mp3",
             "MC_SQUARE_-_Gurjari__Official_Video____Def_Jam_India(48k).mp3",
-            "Mein_Teri_Nachai_Nachu___Raj_Mawar%2C_Rammeher_Mahla___Gauri_Rani___New_Haryanvi_Songs_Haryanavi_2018(256k).mp3",
             "Mera_Dil_Ye_Pukare_Aaja___Heartlock_Flip(256k).mp3",
             "Mera_Intkam_Dekhegi___Shaadi_Mein_Zaroor_Aana___Rajkummar_R,_Kriti_K___Krishna_Beuraa__Anand_R_Anand(48k).mp3",
             "Mera_naam_bagad_billa_hain_edm_mix_dj_rimix___dj_song__(256k).mp3",
@@ -221,7 +220,7 @@
         ]
     },
     "Badshah": {
-        "cover": "songs/Badshah/cover.jpg",
+        "cover": "songs/Covers/Badshah.jpg",
         "songs": [
             "Aastha_Gill_-_Buzz_feat_Badshah___Priyank_Sharma___Official_Music_Video(256k).mp3",
             "Badshah_-_Sab_Sahi_Hai_Bro__Inspired_by__Aladdin__(256k).mp3",
@@ -231,11 +230,10 @@
         ]
     },
     "Haryanvi": {
-        "cover": "songs/Haryanvi/cover.jpg",
+        "cover": "songs/Covers/Haryanvi.jpg",
         "songs": [
             "Mann_Basgi__Official_Video__Shiqaari___Sinta_Bhai___Vaishali_Chaudhary___New_Haryanvi_Songs_2024(48k).mp3",
             "Masoom_Sharma___Nikkar_Nikkar___Sheenam_katholic__Sonika_Singh___New_Haryanvi_Songs_Haryanavi_2019(256k).mp3",
-            "Mein_Teri_Nachai_Nachu___Raj_Mawar%2C_Rammeher_Mahla___Gauri_Rani___New_Haryanvi_Songs_Haryanavi_2018(256k).mp3",
             "Mere_Gahne_Gadwa_de___मेरे_गहने__घड़वा_दे____Manju_Sharma___Haryanvi_Ragni(48k).mp3",
             "Mote_Peg_2_-_Sumit_Parta_Ft._Alankrita_Sahai___Haryanvi_Song___Real_Music(48k).mp3",
             "Moti_Chain__Official_Video__Dc___Sukki___New_Haryanvi_Song_2023(256k).mp3",

@@ -331,7 +331,7 @@
 
 
 
-console.log("Script is Working!");
+// ------------------ Global Variables ------------------
 
 let currentSong = new Audio();
 let songs = [];
@@ -339,6 +339,7 @@ let currFolder = "";
 let allSongsData = {};
 
 // ------------------ Time Formatter ------------------
+
 function formatTime(seconds) {
     let hours = Math.floor(seconds / 3600);
     let minutes = Math.floor((seconds % 3600) / 60);
@@ -352,6 +353,7 @@ function formatTime(seconds) {
 }
 
 // ------------------ Fetch Songs from JSON ------------------
+
 async function fetchSongsJSON() {
     try {
         const res = await fetch("songs/songs.json");
@@ -362,6 +364,7 @@ async function fetchSongsJSON() {
 }
 
 // ------------------ Get Songs for a Folder ------------------
+
 async function getSongs(folder) {
     currFolder = folder;
     const folderName = folder.split("/").pop();
@@ -389,6 +392,7 @@ async function getSongs(folder) {
 }
 
 // ------------------ Play Music ------------------
+
 const playMusic = (track, pause = false) => {
     currentSong.src = `${currFolder}/${track}`;
     if (!pause) currentSong.play();
@@ -402,6 +406,7 @@ const playMusic = (track, pause = false) => {
 };
 
 // ------------------ Display Albums ------------------
+
 async function displayAlbums() {
     const songSec = document.querySelector(".song_sec");
     songSec.innerHTML = "";
@@ -425,6 +430,10 @@ async function displayAlbums() {
             const folder = e.currentTarget.dataset.folder;
             songs = await getSongs(folder);
             // if (songs.length > 0) playMusic(songs[0]);
+            let folderName = document.querySelector('.folderName');
+            folderName.innerHTML = folder.split('/').pop().replaceAll('_', ' ');
+            let icon = document.querySelector('.icon');
+            icon.innerHTML = `${songs.length} songs`;
         });
     });
 }
@@ -483,13 +492,14 @@ const debouncedSearch = debounce(handleSearch, 200);
 document.getElementById("search_input").addEventListener("input", debouncedSearch);
 
 // ------------------ Main Function ------------------
+
 async function main() {
     await fetchSongsJSON();
     await displayAlbums();
 
     // Load default "All" folder if exists
-    if (allSongsData["All"]) {
-        songs = await getSongs("songs/All");
+    if (allSongsData["All_songs"]) {
+        songs = await getSongs("songs/All_songs");
         if (songs.length > 0) playMusic(songs[0], true);
     }
 
@@ -564,6 +574,7 @@ main();
 
 
 // ------------------ Click Me Toast ------------------
+
 window.addEventListener("load", () => {
     const clickMeElements = document.querySelectorAll(".click_me");
 
@@ -574,3 +585,32 @@ window.addEventListener("load", () => {
         }, 4000);
     });
 });
+
+
+
+// // Mobile search toggle
+// const searchIcon = document.getElementById("search_icon");
+// const searchInput = document.getElementById("search_input");
+// const searchContainer = document.querySelector(".serch_container");
+// const serchLogo = document.querySelector(".serch_logo");
+// const bell = document.querySelector(".bell");
+
+// searchIcon.addEventListener("click", () => {
+//     searchContainer.classList.toggle("active");
+//     if (searchContainer.classList.contains("active")) {
+//         searchInput.focus();
+//         serchLogo.style.display = 'none'
+//         bell.style.display = 'none'
+//     } else {
+//         searchInput.value = "";
+//     }
+// });
+
+// // When input is cleared, reset to normal
+// searchInput.addEventListener("input", () => {
+//     if (searchInput.value.trim() === "") {
+//         searchContainer.classList.remove("active");
+//         serchLogo.style.display = 'block'
+//         bell.style.display = 'block'
+//     }
+// });
