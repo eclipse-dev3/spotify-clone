@@ -179,6 +179,14 @@ function handleSearch(event) {
     resultsContainer.querySelectorAll("li").forEach(e => {
         e.addEventListener("click", () => playMusic(e.querySelector(".trackk").textContent.trim()));
     });
+
+
+    document.addEventListener("click", (e) => {
+        if (window.innerWidth <= 590 && !e.target.closest(".serch_container") && !e.target.closest(".outputBox")) {
+            outputBox.classList.remove("show");
+        }
+    });
+
 }
 
 const debouncedSearch = debounce(handleSearch, 200);
@@ -288,37 +296,31 @@ window.addEventListener("load", () => {
 });
 
 
+const searchIcon = document.getElementById("search_icon");
+const searchInput = document.getElementById("search_input");
+const searchContainer = document.querySelector(".serch_container");
 
-// // Mobile search toggle
-// const searchIcon = document.getElementById("search_icon");
-// const searchInput = document.getElementById("search_input");
-// const searchContainer = document.querySelector(".serch_container");
-// const serchLogo = document.querySelector(".serch_logo");
-// const bell = document.querySelector(".bell");
+searchIcon.addEventListener("click", () => {
+    if (window.innerWidth <= 590) {
+        searchContainer.classList.add("active");
+        searchInput.focus();
+    }
+});
 
-// searchIcon.addEventListener("click", () => {
-//     searchContainer.classList.toggle("active");
-//     if (searchContainer.classList.contains("active")) {
-//         searchInput.focus();
-//         serchLogo.style.display = 'none'
-//         bell.style.display = 'none'
-//     } else {
-//         searchInput.value = "";
-//     }
-// });
+// When input text is cleared
+searchInput.addEventListener("input", () => {
+    if (window.innerWidth <= 590 && searchInput.value.trim() === "") {
+        searchContainer.classList.remove("active");
+    }
+});
 
-// // When input is cleared, reset to normal
-// searchInput.addEventListener("input", () => {
-//     if (searchInput.value.trim() === "") {
-//         searchContainer.classList.remove("active");
-//         serchLogo.style.display = 'block'
-//         bell.style.display = 'block'
-//     }
-// });
-
-
-
-
+// Optional: when user clicks outside, close search
+document.addEventListener("click", (e) => {
+    if (window.innerWidth <= 590 && !searchContainer.contains(e.target)) {
+        searchContainer.classList.remove("active");
+        searchInput.value = "";
+    }
+});
 
 
 
