@@ -165,7 +165,7 @@
 
 @media (max-width: 1035px) {
   .red_text {
-    right: -9px;
+    right: -4px;
     top: 25px;
   }
 
@@ -394,6 +394,10 @@
     border-radius: 10px;
   }
 
+  .click_me {
+    right: -5px;
+  }
+
   .serch_logo {
     background-color: #00000000;
     height: 50px;
@@ -457,6 +461,11 @@
 
   .texxt p {
     font-size: 14px;
+  }
+
+  .login {
+    margin-right: 4px;
+    justify-content: end;
   }
 
   .sc_first {

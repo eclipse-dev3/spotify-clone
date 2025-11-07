@@ -328,7 +328,6 @@ nav {
 
 .songs ul li:hover {
     background-color: #242424;
-    /* color: #00ff62; */
 }
 
 .music_icn img {
@@ -380,7 +379,6 @@ nav {
 .main_content {
     width: 80%;
     padding: 4px 40px 0 40px;
-    /* border: 1px solid palegreen; */
     margin-bottom: 8px;
 }
 
@@ -389,7 +387,6 @@ nav {
     height: 48px;
     display: flex;
     gap: 10px;
-    /* border: 1px solid rgb(0, 255, 0); */
 }
 
 .singer .img {
@@ -414,7 +411,6 @@ nav {
 }
 
 .song_sec {
-    /* border: 1px solid rgb(0, 255, 0); */
     padding-left: 28px;
     display: flex;
     flex-wrap: wrap;
@@ -429,8 +425,6 @@ nav {
 }
 
 .song {
-    /* width: 155.179px;
-    height: 248.385px; */
     padding: 12px;
     border-radius: 7px;
     cursor: pointer;
@@ -507,6 +501,7 @@ nav {
     width: 25%;
     height: 51.333px;
     padding: 10px 20px;
+    line-height: 51.333px;
 }
 
 .song_tittle {
@@ -518,6 +513,7 @@ nav {
 .song_tittle p {
     font-size: 12px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .second {

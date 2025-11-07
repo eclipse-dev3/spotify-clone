@@ -72,6 +72,8 @@ const playMusic = (track, pause = false) => {
     if (playBtn) playBtn.src = "svg/play.svg";
 
     document.querySelector(".song_tittle p").textContent = decodeURIComponent(track);
+    // Reset timing and seekbar
+    document.getElementById("music_seekbar").value = 0;
     document.getElementById("start_timing").textContent = "00:00";
     document.getElementById("timing").textContent = "00:00";
 
@@ -264,11 +266,46 @@ async function main() {
 
     // Hamburger toggle
     let isMenuOpen = false;
-    document.querySelector(".hameburger")?.addEventListener("click", () => {
-        const menu = document.querySelector(".first_coloum");
-        menu.style.left = isMenuOpen ? "-120%" : "0";
-        isMenuOpen = !isMenuOpen;
+    const hameburger = document.querySelector(".hameburger");
+    const song_tittle = document.querySelector(".song_tittle");
+    const menu = document.querySelector(".first_coloum");
+
+    if (hameburger && song_tittle && menu) {
+        [hameburger, song_tittle].forEach(element => {
+            element.addEventListener("click", () => {
+                menu.style.left = isMenuOpen ? "-120%" : "0";
+                isMenuOpen = !isMenuOpen;
+            });
+        });
+    }
+
+
+
+    const searchIcon = document.getElementById("search_icon");
+    const searchInput = document.getElementById("search_input");
+    const searchContainer = document.querySelector(".serch_container");
+
+    searchIcon.addEventListener("click", () => {
+        if (window.innerWidth <= 590) {
+            searchContainer.classList.add("active");
+            searchInput.focus();
+        }
     });
+
+    searchInput.addEventListener("input", () => {
+        if (window.innerWidth <= 590 && searchInput.value.trim() === "") {
+            searchContainer.classList.remove("active");
+        }
+    });
+
+    document.addEventListener("click", (e) => {
+        if (window.innerWidth <= 590 && !searchContainer.contains(e.target)) {
+            searchContainer.classList.remove("active");
+            searchInput.value = "";
+        }
+    });
+
+
 
     // Profile image modal
     const profileImage = document.querySelector('.login img');
@@ -277,6 +314,8 @@ async function main() {
 
     profileImage?.addEventListener('click', () => imageSec.classList.add('show'));
     crose?.addEventListener('click', () => imageSec.classList.remove('show'));
+
+
 }
 
 main();
@@ -295,32 +334,6 @@ window.addEventListener("load", () => {
     });
 });
 
-
-const searchIcon = document.getElementById("search_icon");
-const searchInput = document.getElementById("search_input");
-const searchContainer = document.querySelector(".serch_container");
-
-searchIcon.addEventListener("click", () => {
-    if (window.innerWidth <= 590) {
-        searchContainer.classList.add("active");
-        searchInput.focus();
-    }
-});
-
-// When input text is cleared
-searchInput.addEventListener("input", () => {
-    if (window.innerWidth <= 590 && searchInput.value.trim() === "") {
-        searchContainer.classList.remove("active");
-    }
-});
-
-// Optional: when user clicks outside, close search
-document.addEventListener("click", (e) => {
-    if (window.innerWidth <= 590 && !searchContainer.contains(e.target)) {
-        searchContainer.classList.remove("active");
-        searchInput.value = "";
-    }
-});
 
 
 
