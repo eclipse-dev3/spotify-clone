@@ -1,7 +1,5 @@
 // console.log(" Script is Working!")
 
-
-
 // ------------------ Global Variables ------------------
 
 let currentSong = new Audio();
@@ -150,7 +148,7 @@ function mockAPISearch(query) {
 }
 
 function handleSearch(event) {
-    const query = event.target.value.trim();
+    const query = event.target.value.trim().replaceAll(' ', "_");
     const resultsContainer = document.getElementById("search_output_ul");
     const outputBox = document.querySelector(".search_output");
     resultsContainer.innerHTML = "";
@@ -250,19 +248,38 @@ async function main() {
         if (index < songs.length - 1) playMusic(songs[index + 1]);
     });
 
-    const volumeInput = document.getElementById("volume");
-    volumeInput?.addEventListener("input", e => currentSong.volume = e.target.value);
 
-    document.getElementById("volume_icon")?.addEventListener("click", e => {
+    // volume functionality
+
+    const volumeInput = document.getElementById("volume");
+    const volumeIcon = document.getElementById("volume_icon");
+
+    if (volumeInput) {
+        currentSong.volume = parseFloat(volumeInput.value);
+    }
+
+    volumeInput?.addEventListener("input", e => {
+        currentSong.volume = parseFloat(e.target.value);
+    });
+
+    volumeIcon?.addEventListener("click", e => {
         const vol = volumeInput;
+
         if (e.target.src.includes("svg/volumeFull.svg")) {
-            e.target.src = "svg/volumeZero.svg"; currentSong.volume = 0; vol.value = 0;
+            e.target.src = "svg/volumeZero.svg";
+            currentSong.volume = 0;
+            vol.value = 0;
         } else if (e.target.src.includes("svg/volumeZero.svg")) {
-            e.target.src = "svg/volumeHalf.svg"; currentSong.volume = 0.1; vol.value = 0.1;
+            e.target.src = "svg/volumeHalf.svg";
+            currentSong.volume = 0.2;
+            vol.value = 0.2;
         } else {
-            e.target.src = "svg/volumeFull.svg"; currentSong.volume = 1; vol.value = 1;
+            e.target.src = "svg/volumeFull.svg";
+            currentSong.volume = 1;
+            vol.value = 1;
         }
     });
+
 
     // Hamburger toggle
     let isMenuOpen = false;
@@ -306,7 +323,6 @@ async function main() {
     });
 
 
-
     // Profile image modal
     const profileImage = document.querySelector('.login img');
     const imageSec = document.getElementById('image_open_sec');
@@ -315,6 +331,11 @@ async function main() {
     profileImage?.addEventListener('click', () => imageSec.classList.add('show'));
     crose?.addEventListener('click', () => imageSec.classList.remove('show'));
 
+    document.addEventListener("click", (e) => {
+        if ( !e.target.closest(".login img") && !e.target.closest("#image_open_sec")) {
+            imageSec.classList.remove("show");
+        }
+    });
 
 }
 
@@ -336,12 +357,3 @@ window.addEventListener("load", () => {
 
 
 
-
-
-
-
-
-/*
-
-
-*/

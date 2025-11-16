@@ -585,7 +585,7 @@ nav {
     right: 30px;
     z-index: 1000;
     color: rgb(255, 255, 255);
-    background: rgba(37, 24, 74, 0.306);
+    background: rgba(30, 18, 63, 0.466);
     padding: 20px;
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -606,7 +606,6 @@ nav {
     cursor: pointer;
     border: 3px solid blue;
     border-radius: 50%;
-    /* box-shadow: 0 2px 5px rgba(215 115 255, .6); */
 }
 
 #image_open_sec p {
@@ -614,7 +613,7 @@ nav {
 }
 
 #image_open_sec h2 {
-    color: #8353d6;
+    color: #8858db;
 }
 
 #image_open_sec button {
