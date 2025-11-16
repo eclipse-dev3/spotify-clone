@@ -283,12 +283,13 @@ async function main() {
 
     // Hamburger toggle
     let isMenuOpen = false;
+    let close = document.querySelector("#hide_navbar img");
     const hameburger = document.querySelector(".hameburger");
-    const song_tittle = document.querySelector(".song_tittle");
+    const song_tittle = document.querySelector(".song_tittle p");
     const menu = document.querySelector(".first_coloum");
 
-    if (hameburger && song_tittle && menu) {
-        [hameburger, song_tittle].forEach(element => {
+    if (hameburger && song_tittle && menu && close) {
+        [hameburger, song_tittle, close].forEach(element => {
             element.addEventListener("click", () => {
                 menu.style.left = isMenuOpen ? "-120%" : "0";
                 isMenuOpen = !isMenuOpen;
@@ -332,7 +333,7 @@ async function main() {
     crose?.addEventListener('click', () => imageSec.classList.remove('show'));
 
     document.addEventListener("click", (e) => {
-        if ( !e.target.closest(".login img") && !e.target.closest("#image_open_sec")) {
+        if (!e.target.closest(".login img") && !e.target.closest("#image_open_sec")) {
             imageSec.classList.remove("show");
         }
     });

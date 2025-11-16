@@ -169,6 +169,12 @@
     top: 25px;
   }
 
+  #hide_navbar img {
+    right: -46px;
+    top: 40%;
+    display: block;
+  }
+
   .icon {
     opacity: .6;
     visibility: visible;
@@ -378,11 +384,15 @@
   }
 
   .first_coloum {
-    width: 100%;
+    width: 75%;
   }
 
-  .search_output {
-    width: 65%;
+  .songs_sec {
+    padding: 0 0 0 10px;
+  }
+
+  .content {
+    padding: 12px 16px 8px 5px;
   }
 }
 
@@ -411,6 +421,19 @@
 
   .click_me {
     right: -5px;
+  }
+
+  .library {
+    margin: 0;
+    padding: 4px 0 4px 5px;
+  }
+
+  .icon {
+    width: auto;
+  }
+
+  .buttons {
+    width: auto;
   }
 
   .serch_logo {
@@ -462,10 +485,6 @@
 
   .next {
     margin: 0;
-  }
-
-  .first_coloum {
-    width: 100%;
   }
 
   .texxt h1 {
@@ -550,6 +569,10 @@
     width: 140px;
   }
 
+  .folderName {
+    font-size: 15px;
+  }
+
   .secnd_song i {
     width: 50px;
     top: 80px;
@@ -563,10 +586,6 @@
 
   .scrool .song {
     width: 40%;
-  }
-
-  .first_coloum {
-    width: 100%;
   }
 
   .login {

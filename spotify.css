@@ -38,6 +38,7 @@ nav {
 .hameburger img {
     width: 30px;
     display: none;
+    filter: invert(.8);
 }
 
 .spotify img {
@@ -199,6 +200,7 @@ nav {
 }
 
 .first_coloum {
+    position: relative;
     width: 25%;
     height: 79.5vh;
     border-radius: 10px;
@@ -686,4 +688,14 @@ nav {
 .red_text {
     right: 100px;
     top: 25px;
+}
+
+#hide_navbar img {
+    position: absolute;
+    width: 35px;
+    color: rgba(255, 255, 255, 0.715);
+    background-color: #ecececc7;
+    border-radius: 50%;
+    padding: 5px;
+    display: none;
 }
