@@ -119,6 +119,8 @@ async function displayAlbums() {
         `;
     }
 
+    document.querySelector('.music p').innerHTML = `${Object.keys(allSongsData).length} Albums`;
+
     Array.from(document.getElementsByClassName("song")).forEach(el => {
         el.addEventListener("click", async e => {
             const folder = e.currentTarget.dataset.folder;
@@ -213,6 +215,17 @@ async function main() {
             play.src = "svg/play1.svg"
         }
     })
+
+    currentSong.addEventListener("ended", () => {
+        const currentTrack = decodeURIComponent(currentSong.src.split("/").pop());
+        const index = songs.indexOf(currentTrack);
+
+        if (index < songs.length - 1) {
+            playMusic(songs[index + 1]);
+        } else {
+            playMusic(songs[0]);
+        }
+    });
 
     currentSong.addEventListener("play", () => {
         document.querySelector(".equalizer")?.classList.remove("paused");
@@ -357,4 +370,8 @@ window.addEventListener("load", () => {
 });
 
 
+// ------------------ Reload ------------------
 
+document.querySelector('.home').addEventListener('click', () => {
+location.reload();
+})

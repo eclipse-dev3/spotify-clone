@@ -25,16 +25,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #00000092;
+  background: #121212;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #797979;
-  border-radius: 10px;
+  background: #313131;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3086a9;
+  background: #349cc5;
   cursor: pointer;
 }
 
@@ -314,6 +314,9 @@
     justify-content: start;
   }
 
+  .inner_search:hover {
+    border: none;
+  }
 
   .fst_input {
     display: none;
@@ -331,10 +334,10 @@
 
   .fst_input input {
     height: 40px;
-    color: #b3b3b3;
+    color: #bdbdbd;
     background: #0c0c0c00;
-    border-left: 1px solid #ffffff7a;
-    border-bottom: 1px solid #ffffff7a;
+    border-left: 1.5px solid #ffffff96;
+    border-bottom: 1.5px solid #ffffff96;
     border-top: none;
     border-right: none;
     border-radius: 50px;
@@ -343,7 +346,7 @@
   }
 
   .fst_input input::placeholder {
-    color: #b3b3b3ac;
+    color: #cacacad4;
     font-size: 14px;
   }
 
@@ -436,10 +439,15 @@
     width: auto;
   }
 
+  * {
+    scrollbar-width: thin;
+  }
+
   .serch_logo {
     background-color: #00000000;
     height: 50px;
     width: 35px;
+    margin: -3px 10px auto auto;
   }
 
   .serch_logo img {
@@ -499,7 +507,13 @@
 
   .login {
     margin-right: 4px;
+    margin-left: 0;
     justify-content: end;
+    width: 50px;
+  }
+
+  .login img {
+    width: 80%;
   }
 
   .sc_first {
@@ -513,8 +527,14 @@
   }
 
   #search_input {
+    margin-top: 5px;
     border-radius: 50px;
     padding-left: 10px;
+  }
+
+  .search_output {
+    top: 53px;
+    width: 65%;
   }
 
   .buttons {

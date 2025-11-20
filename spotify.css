@@ -54,12 +54,18 @@ nav {
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.home:hover {
+    transform: scale(1.15);
+    background-color: #303030;
 }
 
 .home img {
     width: 24px;
     height: 24px;
-    cursor: pointer;
 }
 
 .serch_container {
@@ -67,8 +73,19 @@ nav {
     width: auto;
     height: 48px;
     padding: 0 8px;
+}
+.inner_search {
+    position: relative;
     display: flex;
     align-items: center;
+    border-radius: 30px;
+    border: 1.5px solid rgba(128, 128, 128, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.inner_search:hover {
+    border: 1.5px solid gray;
 }
 
 .serch_logo {
@@ -191,6 +208,11 @@ nav {
 .login img {
     width: 60%;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.login img:hover {
+    transform: scale(1.15);
 }
 
 .main {
@@ -237,11 +259,9 @@ nav {
 }
 
 .library {
-    width: 142px;
     height: 32px;
     padding: 4px 8px;
     display: flex;
-    margin-right: 60px;
 }
 
 .lib_img {
@@ -376,6 +396,7 @@ nav {
 .music p {
     background-color: #fff;
     color: #000;
+    font-weight: 500;
 }
 
 .main_content {
@@ -413,7 +434,7 @@ nav {
 }
 
 .song_sec {
-    padding-left: 28px;
+    padding: 0 0 30px 28px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -422,7 +443,6 @@ nav {
 .scrool {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: auto;
     height: 67vh;
 }
 
@@ -446,7 +466,7 @@ nav {
 
 .song .txt {
     width: 153.719px;
-    height: 86.667px;
+    height: 56.667px;
     margin-top: 5px;
 }
 
@@ -694,7 +714,7 @@ nav {
     position: absolute;
     width: 35px;
     color: rgba(255, 255, 255, 0.715);
-    background-color: #ecececc7;
+    background-color: #bbbbbbc7;
     border-radius: 50%;
     padding: 5px;
     display: none;
