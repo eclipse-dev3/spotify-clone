@@ -142,4 +142,4 @@ Contributions welcome! Read the [Contributing Guide](CONTRIBUTING.md) for detail
 
 
 **Live link**
-- Live: [https://gaurav-spotify-03.vercel.app/](https://gaurav-spotify-03.vercel.app/)
+- Live: [https://gaurav-spotify-03.vercel.app/](https://ownmusic03.vercel.app)
