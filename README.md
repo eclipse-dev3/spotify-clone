@@ -127,7 +127,7 @@ A sophisticated, Spotify-inspired web music player crafted with pure JavaScript.
 ## 👨‍💻 Developer
 
 **Gaurav Kumar**
-- Portfolio: [https://gauravkumar03.vercel.app](https://gauravkumar03.vercel.app)
+- Portfolio: [https://gauravk.vercel.app](https://gauravk.vercel.app)
 - GitHub: [Your GitHub Profile](https://github.com/eclipse-dev3)
 
 ## 📄 License
@@ -142,4 +142,4 @@ Contributions welcome! Read the [Contributing Guide](CONTRIBUTING.md) for detail
 
 
 **Live link**
-- Live: [https://ownmusic03.vercel.app](https://ownmusic03.vercel.app)
+- Live: [https://ownmusicx.vercel.app](https://ownmusicx.vercel.app)
