@@ -70,7 +70,7 @@ const playMusic = (track, pause = false) => {
     if (playBtn) playBtn.src = "svg/play.svg";
 
     document.querySelector(".song_tittle p").textContent = decodeURIComponent(track);
-    // Reset timing and seekbar
+
     document.getElementById("music_seekbar").value = 0;
     document.getElementById("start_timing").textContent = "00:00";
     document.getElementById("timing").textContent = "00:00";
@@ -81,14 +81,12 @@ const playMusic = (track, pause = false) => {
         const songText = li.querySelector(".trackk").textContent.trim();
         const iconContainer = li.querySelector(".music_icn");
 
-        // Reset icon
         iconContainer.innerHTML = `<img src="svg/music.svg" alt="" class="invert">`;
         li.querySelector(".trackk").classList.remove("active-song");
 
         if (songText === track.trim()) {
             li.querySelector(".trackk").classList.add("active-song");
 
-            // Add animated equalizer
             iconContainer.innerHTML = `
         <div class="equalizer">
           <span></span><span></span><span></span>
@@ -234,8 +232,6 @@ async function main() {
     currentSong.addEventListener("pause", () => {
         document.querySelector(".equalizer")?.classList.add("paused");
     });
-
-
 
     currentSong.addEventListener("timeupdate", () => {
         document.getElementById("start_timing").textContent = formatTime(currentSong.currentTime);
